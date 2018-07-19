@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A4E539C4662CD6FA2C9CE16 /* libPods-VKClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86966E91A7E803AFE69F6CB2 /* libPods-VKClient.a */; };
+		CB20931C20F9F28400B2ED0C /* NewsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20931B20F9F28400B2ED0C /* NewsDetailsViewController.m */; };
+		CB20932020FA0F7500B2ED0C /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20931F20FA0F7500B2ED0C /* Comment.m */; };
+		CB20932520FA117B00B2ED0C /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20932320FA117B00B2ED0C /* CommentTableViewCell.m */; };
+		CB20932620FA117B00B2ED0C /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB20932420FA117B00B2ED0C /* CommentTableViewCell.xib */; };
+		CB20932A20FA199A00B2ED0C /* FetchCommentsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20932920FA199A00B2ED0C /* FetchCommentsRequest.m */; };
+		CB20932E20FA2E7600B2ED0C /* CommentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20932D20FA2E7600B2ED0C /* CommentParser.m */; };
+		CB20933220FA2FE800B2ED0C /* SourceParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20933120FA2FE800B2ED0C /* SourceParser.m */; };
+		CB20933620FA46D400B2ED0C /* AddLikeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20933520FA46D400B2ED0C /* AddLikeRequest.m */; };
+		CB20933A20FA5D7A00B2ED0C /* LikeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20933920FA5D7A00B2ED0C /* LikeParser.m */; };
+		CB20933E20FA5F0600B2ED0C /* LikeService.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20933D20FA5F0600B2ED0C /* LikeService.m */; };
+		CB20934320FA6DCF00B2ED0C /* DeleteLikeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB20934220FA6DCF00B2ED0C /* DeleteLikeRequest.m */; };
+		CB3C046A20FB4426003E0511 /* ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3C046920FB4426003E0511 /* ActivityIndicator.m */; };
+		CB428C2320F7F4E100C0F54C /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = CB428C2220F7F4E100C0F54C /* News.m */; };
+		CB428C2720F7F99A00C0F54C /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = CB428C2620F7F99A00C0F54C /* Helpers.m */; };
+		CB428C2F20F8003700C0F54C /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB428C2D20F8003700C0F54C /* PhotoCollectionViewCell.m */; };
+		CB428C3020F8003700C0F54C /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB428C2E20F8003700C0F54C /* PhotoCollectionViewCell.xib */; };
+		CB428C3420F80BE500C0F54C /* FetchNewsfeedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB428C3320F80BE500C0F54C /* FetchNewsfeedRequest.m */; };
+		CB428C3720F80F5F00C0F54C /* ApiProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CB428C3620F80F5F00C0F54C /* ApiProvider.m */; };
+		CB428C3B20F8109B00C0F54C /* VKError.m in Sources */ = {isa = PBXBuildFile; fileRef = CB428C3A20F8109B00C0F54C /* VKError.m */; };
+		CB428C4420F8152800C0F54C /* NewsfeedsService.m in Sources */ = {isa = PBXBuildFile; fileRef = CB428C4320F8152800C0F54C /* NewsfeedsService.m */; };
+		CB428C4820F8179800C0F54C /* NewsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CB428C4720F8179800C0F54C /* NewsParser.m */; };
+		CB428C4D20F81C1300C0F54C /* Source.m in Sources */ = {isa = PBXBuildFile; fileRef = CB428C4C20F81C1300C0F54C /* Source.m */; };
+		CB74439D20F9317800848182 /* AlertsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CB74439C20F9317800848182 /* AlertsFactory.m */; };
+		CB7DDE3420F7419800BF1B45 /* NewsfeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7DDE3320F7419800BF1B45 /* NewsfeedViewController.m */; };
+		CB7DDE3A20F7422800BF1B45 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7DDE3820F7422800BF1B45 /* NewsTableViewCell.m */; };
+		CB7DDE3B20F7422800BF1B45 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB7DDE3920F7422800BF1B45 /* NewsTableViewCell.xib */; };
+		CBAA741320F6A9FD00E53051 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAA741220F6A9FD00E53051 /* AppDelegate.m */; };
+		CBAA741920F6A9FD00E53051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAA741720F6A9FD00E53051 /* Main.storyboard */; };
+		CBAA741B20F6AA0000E53051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBAA741A20F6AA0000E53051 /* Assets.xcassets */; };
+		CBAA741E20F6AA0000E53051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBAA741C20F6AA0000E53051 /* LaunchScreen.storyboard */; };
+		CBAA742120F6AA0000E53051 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAA742020F6AA0000E53051 /* main.m */; };
+		CBAA742C20F6AA7200E53051 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAA742B20F6AA7200E53051 /* LoginViewController.m */; };
+		CBAA743920F6C8E400E53051 /* UserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAA743820F6C8E400E53051 /* UserDefaultsManager.m */; };
+		CBAA743F20F6CDC700E53051 /* UIAlertController+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CBAA743E20F6CDC700E53051 /* UIAlertController+Extensions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A5ADE6A28CAA0DC54B85358 /* Pods-VKClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-VKClient/Pods-VKClient.release.xcconfig"; sourceTree = "<group>"; };
+		54D90D6E53C006060F146F1E /* Pods-VKClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VKClient/Pods-VKClient.debug.xcconfig"; sourceTree = "<group>"; };
+		86966E91A7E803AFE69F6CB2 /* libPods-VKClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB20931A20F9F28400B2ED0C /* NewsDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsDetailsViewController.h; sourceTree = "<group>"; };
+		CB20931B20F9F28400B2ED0C /* NewsDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsDetailsViewController.m; sourceTree = "<group>"; };
+		CB20931E20FA0F7500B2ED0C /* Comment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		CB20931F20FA0F7500B2ED0C /* Comment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		CB20932220FA117B00B2ED0C /* CommentTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
+		CB20932320FA117B00B2ED0C /* CommentTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
+		CB20932420FA117B00B2ED0C /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		CB20932820FA199A00B2ED0C /* FetchCommentsRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchCommentsRequest.h; sourceTree = "<group>"; };
+		CB20932920FA199A00B2ED0C /* FetchCommentsRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchCommentsRequest.m; sourceTree = "<group>"; };
+		CB20932C20FA2E7600B2ED0C /* CommentParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentParser.h; sourceTree = "<group>"; };
+		CB20932D20FA2E7600B2ED0C /* CommentParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentParser.m; sourceTree = "<group>"; };
+		CB20933020FA2FE800B2ED0C /* SourceParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceParser.h; sourceTree = "<group>"; };
+		CB20933120FA2FE800B2ED0C /* SourceParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceParser.m; sourceTree = "<group>"; };
+		CB20933420FA46D400B2ED0C /* AddLikeRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddLikeRequest.h; sourceTree = "<group>"; };
+		CB20933520FA46D400B2ED0C /* AddLikeRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddLikeRequest.m; sourceTree = "<group>"; };
+		CB20933820FA5D7A00B2ED0C /* LikeParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LikeParser.h; sourceTree = "<group>"; };
+		CB20933920FA5D7A00B2ED0C /* LikeParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LikeParser.m; sourceTree = "<group>"; };
+		CB20933C20FA5F0600B2ED0C /* LikeService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LikeService.h; sourceTree = "<group>"; };
+		CB20933D20FA5F0600B2ED0C /* LikeService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LikeService.m; sourceTree = "<group>"; };
+		CB20933F20FA623300B2ED0C /* NewsTableViewCellOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCellOutput.h; sourceTree = "<group>"; };
+		CB20934120FA6DCF00B2ED0C /* DeleteLikeRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteLikeRequest.h; sourceTree = "<group>"; };
+		CB20934220FA6DCF00B2ED0C /* DeleteLikeRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteLikeRequest.m; sourceTree = "<group>"; };
+		CB3C046820FB4426003E0511 /* ActivityIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityIndicator.h; sourceTree = "<group>"; };
+		CB3C046920FB4426003E0511 /* ActivityIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicator.m; sourceTree = "<group>"; };
+		CB428C2120F7F4E100C0F54C /* News.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		CB428C2220F7F4E100C0F54C /* News.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		CB428C2520F7F99A00C0F54C /* Helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		CB428C2620F7F99A00C0F54C /* Helpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Helpers.m; sourceTree = "<group>"; };
+		CB428C2C20F8003700C0F54C /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		CB428C2D20F8003700C0F54C /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		CB428C2E20F8003700C0F54C /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		CB428C3220F80BE500C0F54C /* FetchNewsfeedRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchNewsfeedRequest.h; sourceTree = "<group>"; };
+		CB428C3320F80BE500C0F54C /* FetchNewsfeedRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FetchNewsfeedRequest.m; sourceTree = "<group>"; };
+		CB428C3520F80F5F00C0F54C /* ApiProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiProvider.h; sourceTree = "<group>"; };
+		CB428C3620F80F5F00C0F54C /* ApiProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiProvider.m; sourceTree = "<group>"; };
+		CB428C3920F8109B00C0F54C /* VKError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKError.h; sourceTree = "<group>"; };
+		CB428C3A20F8109B00C0F54C /* VKError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKError.m; sourceTree = "<group>"; };
+		CB428C4220F8152800C0F54C /* NewsfeedsService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsfeedsService.h; sourceTree = "<group>"; };
+		CB428C4320F8152800C0F54C /* NewsfeedsService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsfeedsService.m; sourceTree = "<group>"; };
+		CB428C4620F8179800C0F54C /* NewsParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsParser.h; sourceTree = "<group>"; };
+		CB428C4720F8179800C0F54C /* NewsParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsParser.m; sourceTree = "<group>"; };
+		CB428C4B20F81C1300C0F54C /* Source.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Source.h; sourceTree = "<group>"; };
+		CB428C4C20F81C1300C0F54C /* Source.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Source.m; sourceTree = "<group>"; };
+		CB74439B20F9317800848182 /* AlertsFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertsFactory.h; sourceTree = "<group>"; };
+		CB74439C20F9317800848182 /* AlertsFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertsFactory.m; sourceTree = "<group>"; };
+		CB7DDE3220F7419800BF1B45 /* NewsfeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsfeedViewController.h; sourceTree = "<group>"; };
+		CB7DDE3320F7419800BF1B45 /* NewsfeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsfeedViewController.m; sourceTree = "<group>"; };
+		CB7DDE3720F7422800BF1B45 /* NewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		CB7DDE3820F7422800BF1B45 /* NewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		CB7DDE3920F7422800BF1B45 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		CBAA740E20F6A9FD00E53051 /* VKClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBAA741120F6A9FD00E53051 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBAA741220F6A9FD00E53051 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBAA741820F6A9FD00E53051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBAA741A20F6AA0000E53051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBAA741D20F6AA0000E53051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBAA741F20F6AA0000E53051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBAA742020F6AA0000E53051 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBAA742A20F6AA7200E53051 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CBAA742B20F6AA7200E53051 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CBAA743120F6BFD000E53051 /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		CBAA743720F6C8E400E53051 /* UserDefaultsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaultsManager.h; sourceTree = "<group>"; };
+		CBAA743820F6C8E400E53051 /* UserDefaultsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsManager.m; sourceTree = "<group>"; };
+		CBAA743D20F6CDC700E53051 /* UIAlertController+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Extensions.h"; sourceTree = "<group>"; };
+		CBAA743E20F6CDC700E53051 /* UIAlertController+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Extensions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBAA740B20F6A9FD00E53051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A4E539C4662CD6FA2C9CE16 /* libPods-VKClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CE5572C855D9F2D1981FD72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86966E91A7E803AFE69F6CB2 /* libPods-VKClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB20931920F9F25E00B2ED0C /* NewsDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB20931A20F9F28400B2ED0C /* NewsDetailsViewController.h */,
+				CB20931B20F9F28400B2ED0C /* NewsDetailsViewController.m */,
+			);
+			path = NewsDetailsViewController;
+			sourceTree = "<group>";
+		};
+		CB20931D20FA0F6800B2ED0C /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				CB20931E20FA0F7500B2ED0C /* Comment.h */,
+				CB20931F20FA0F7500B2ED0C /* Comment.m */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		CB20932120FA10F600B2ED0C /* CommentTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CB20932220FA117B00B2ED0C /* CommentTableViewCell.h */,
+				CB20932320FA117B00B2ED0C /* CommentTableViewCell.m */,
+				CB20932420FA117B00B2ED0C /* CommentTableViewCell.xib */,
+			);
+			path = CommentTableViewCell;
+			sourceTree = "<group>";
+		};
+		CB20932720FA198500B2ED0C /* FetchComments */ = {
+			isa = PBXGroup;
+			children = (
+				CB20932820FA199A00B2ED0C /* FetchCommentsRequest.h */,
+				CB20932920FA199A00B2ED0C /* FetchCommentsRequest.m */,
+			);
+			path = FetchComments;
+			sourceTree = "<group>";
+		};
+		CB20932B20FA2E6300B2ED0C /* CommentParser */ = {
+			isa = PBXGroup;
+			children = (
+				CB20932C20FA2E7600B2ED0C /* CommentParser.h */,
+				CB20932D20FA2E7600B2ED0C /* CommentParser.m */,
+			);
+			path = CommentParser;
+			sourceTree = "<group>";
+		};
+		CB20932F20FA2FD500B2ED0C /* SourceParser */ = {
+			isa = PBXGroup;
+			children = (
+				CB20933020FA2FE800B2ED0C /* SourceParser.h */,
+				CB20933120FA2FE800B2ED0C /* SourceParser.m */,
+			);
+			path = SourceParser;
+			sourceTree = "<group>";
+		};
+		CB20933320FA46C600B2ED0C /* AddLike */ = {
+			isa = PBXGroup;
+			children = (
+				CB20933420FA46D400B2ED0C /* AddLikeRequest.h */,
+				CB20933520FA46D400B2ED0C /* AddLikeRequest.m */,
+			);
+			path = AddLike;
+			sourceTree = "<group>";
+		};
+		CB20933720FA5D6D00B2ED0C /* LikeParser */ = {
+			isa = PBXGroup;
+			children = (
+				CB20933820FA5D7A00B2ED0C /* LikeParser.h */,
+				CB20933920FA5D7A00B2ED0C /* LikeParser.m */,
+			);
+			path = LikeParser;
+			sourceTree = "<group>";
+		};
+		CB20933B20FA5EF600B2ED0C /* LikeService */ = {
+			isa = PBXGroup;
+			children = (
+				CB20933C20FA5F0600B2ED0C /* LikeService.h */,
+				CB20933D20FA5F0600B2ED0C /* LikeService.m */,
+			);
+			path = LikeService;
+			sourceTree = "<group>";
+		};
+		CB20934020FA6DB700B2ED0C /* DeleteLike */ = {
+			isa = PBXGroup;
+			children = (
+				CB20934120FA6DCF00B2ED0C /* DeleteLikeRequest.h */,
+				CB20934220FA6DCF00B2ED0C /* DeleteLikeRequest.m */,
+			);
+			path = DeleteLike;
+			sourceTree = "<group>";
+		};
+		CB3C046720FB4415003E0511 /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				CB3C046820FB4426003E0511 /* ActivityIndicator.h */,
+				CB3C046920FB4426003E0511 /* ActivityIndicator.m */,
+			);
+			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		CB428C1F20F7F4CA00C0F54C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				CB20931D20FA0F6800B2ED0C /* Comment */,
+				CB428C4A20F81C0300C0F54C /* Source */,
+				CB428C3820F8109100C0F54C /* VKError */,
+				CB428C2020F7F4D800C0F54C /* News */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CB428C2020F7F4D800C0F54C /* News */ = {
+			isa = PBXGroup;
+			children = (
+				CB428C2120F7F4E100C0F54C /* News.h */,
+				CB428C2220F7F4E100C0F54C /* News.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		CB428C2420F7F90F00C0F54C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CB428C2520F7F99A00C0F54C /* Helpers.h */,
+				CB428C2620F7F99A00C0F54C /* Helpers.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CB428C2820F8001200C0F54C /* PhotoCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CB428C2C20F8003700C0F54C /* PhotoCollectionViewCell.h */,
+				CB428C2D20F8003700C0F54C /* PhotoCollectionViewCell.m */,
+				CB428C2E20F8003700C0F54C /* PhotoCollectionViewCell.xib */,
+			);
+			path = PhotoCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		CB428C3120F80BBA00C0F54C /* FetchNewsfeed */ = {
+			isa = PBXGroup;
+			children = (
+				CB428C3220F80BE500C0F54C /* FetchNewsfeedRequest.h */,
+				CB428C3320F80BE500C0F54C /* FetchNewsfeedRequest.m */,
+			);
+			path = FetchNewsfeed;
+			sourceTree = "<group>";
+		};
+		CB428C3820F8109100C0F54C /* VKError */ = {
+			isa = PBXGroup;
+			children = (
+				CB428C3920F8109B00C0F54C /* VKError.h */,
+				CB428C3A20F8109B00C0F54C /* VKError.m */,
+			);
+			path = VKError;
+			sourceTree = "<group>";
+		};
+		CB428C4020F8150F00C0F54C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CB20933B20FA5EF600B2ED0C /* LikeService */,
+				CB428C4120F8151A00C0F54C /* NewsfeedService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CB428C4120F8151A00C0F54C /* NewsfeedService */ = {
+			isa = PBXGroup;
+			children = (
+				CB428C4220F8152800C0F54C /* NewsfeedsService.h */,
+				CB428C4320F8152800C0F54C /* NewsfeedsService.m */,
+			);
+			path = NewsfeedService;
+			sourceTree = "<group>";
+		};
+		CB428C4520F8178D00C0F54C /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				CB20933720FA5D6D00B2ED0C /* LikeParser */,
+				CB20932F20FA2FD500B2ED0C /* SourceParser */,
+				CB20932B20FA2E6300B2ED0C /* CommentParser */,
+				CB428C4920F8179B00C0F54C /* NewsParser */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		CB428C4920F8179B00C0F54C /* NewsParser */ = {
+			isa = PBXGroup;
+			children = (
+				CB428C4620F8179800C0F54C /* NewsParser.h */,
+				CB428C4720F8179800C0F54C /* NewsParser.m */,
+			);
+			path = NewsParser;
+			sourceTree = "<group>";
+		};
+		CB428C4A20F81C0300C0F54C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CB428C4B20F81C1300C0F54C /* Source.h */,
+				CB428C4C20F81C1300C0F54C /* Source.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CB74439A20F9315E00848182 /* AlertsFactory */ = {
+			isa = PBXGroup;
+			children = (
+				CB74439B20F9317800848182 /* AlertsFactory.h */,
+				CB74439C20F9317800848182 /* AlertsFactory.m */,
+			);
+			path = AlertsFactory;
+			sourceTree = "<group>";
+		};
+		CB7DDE3120F7418300BF1B45 /* NewsfeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB7DDE3220F7419800BF1B45 /* NewsfeedViewController.h */,
+				CB7DDE3320F7419800BF1B45 /* NewsfeedViewController.m */,
+			);
+			path = NewsfeedViewController;
+			sourceTree = "<group>";
+		};
+		CB7DDE3520F741F600BF1B45 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CB20932120FA10F600B2ED0C /* CommentTableViewCell */,
+				CB428C2820F8001200C0F54C /* PhotoCollectionViewCell */,
+				CB7DDE3620F7420A00BF1B45 /* NewsTableViewCell */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CB7DDE3620F7420A00BF1B45 /* NewsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CB7DDE3720F7422800BF1B45 /* NewsTableViewCell.h */,
+				CB7DDE3820F7422800BF1B45 /* NewsTableViewCell.m */,
+				CB7DDE3920F7422800BF1B45 /* NewsTableViewCell.xib */,
+				CB20933F20FA623300B2ED0C /* NewsTableViewCellOutput.h */,
+			);
+			path = NewsTableViewCell;
+			sourceTree = "<group>";
+		};
+		CBAA740520F6A9FD00E53051 = {
+			isa = PBXGroup;
+			children = (
+				CBAA741020F6A9FD00E53051 /* VKClient */,
+				CBAA740F20F6A9FD00E53051 /* Products */,
+				F953D5518BB2335801FD3979 /* Pods */,
+				8CE5572C855D9F2D1981FD72 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CBAA740F20F6A9FD00E53051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBAA740E20F6A9FD00E53051 /* VKClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBAA741020F6A9FD00E53051 /* VKClient */ = {
+			isa = PBXGroup;
+			children = (
+				CB428C4520F8178D00C0F54C /* Parsers */,
+				CB428C4020F8150F00C0F54C /* Services */,
+				CB428C1F20F7F4CA00C0F54C /* Entity */,
+				CBAA743A20F6CD9700E53051 /* Helpers */,
+				CBAA742D20F6BF6B00E53051 /* Managers */,
+				CBAA742820F6AA1900E53051 /* Resources */,
+				CBAA742720F6AA0800E53051 /* Controllers */,
+			);
+			path = VKClient;
+			sourceTree = "<group>";
+		};
+		CBAA742720F6AA0800E53051 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB20931920F9F25E00B2ED0C /* NewsDetailsViewController */,
+				CB7DDE3120F7418300BF1B45 /* NewsfeedViewController */,
+				CBAA742920F6AA5800E53051 /* LoginViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CBAA742820F6AA1900E53051 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB7DDE3520F741F600BF1B45 /* UI */,
+				CBAA741720F6A9FD00E53051 /* Main.storyboard */,
+				CBAA741A20F6AA0000E53051 /* Assets.xcassets */,
+				CBAA741C20F6AA0000E53051 /* LaunchScreen.storyboard */,
+				CBAA741F20F6AA0000E53051 /* Info.plist */,
+				CBAA742020F6AA0000E53051 /* main.m */,
+				CBAA741120F6A9FD00E53051 /* AppDelegate.h */,
+				CBAA741220F6A9FD00E53051 /* AppDelegate.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBAA742920F6AA5800E53051 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CBAA742A20F6AA7200E53051 /* LoginViewController.h */,
+				CBAA742B20F6AA7200E53051 /* LoginViewController.m */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		CBAA742D20F6BF6B00E53051 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CB74439A20F9315E00848182 /* AlertsFactory */,
+				CBAA743620F6C8CC00E53051 /* UserDefaultsManager */,
+				CBAA742E20F6BF7500E53051 /* API */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CBAA742E20F6BF7500E53051 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CBAA743020F6BF8C00E53051 /* ApiProvider */,
+				CBAA742F20F6BF7F00E53051 /* Requests */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CBAA742F20F6BF7F00E53051 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				CB20934020FA6DB700B2ED0C /* DeleteLike */,
+				CB20933320FA46C600B2ED0C /* AddLike */,
+				CB20932720FA198500B2ED0C /* FetchComments */,
+				CB428C3120F80BBA00C0F54C /* FetchNewsfeed */,
+				CBAA743120F6BFD000E53051 /* Request.h */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		CBAA743020F6BF8C00E53051 /* ApiProvider */ = {
+			isa = PBXGroup;
+			children = (
+				CB428C3520F80F5F00C0F54C /* ApiProvider.h */,
+				CB428C3620F80F5F00C0F54C /* ApiProvider.m */,
+			);
+			path = ApiProvider;
+			sourceTree = "<group>";
+		};
+		CBAA743620F6C8CC00E53051 /* UserDefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				CBAA743720F6C8E400E53051 /* UserDefaultsManager.h */,
+				CBAA743820F6C8E400E53051 /* UserDefaultsManager.m */,
+			);
+			path = UserDefaultsManager;
+			sourceTree = "<group>";
+		};
+		CBAA743A20F6CD9700E53051 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB3C046720FB4415003E0511 /* ActivityIndicator */,
+				CB428C2420F7F90F00C0F54C /* Common */,
+				CBAA743B20F6CD9E00E53051 /* UIKit */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CBAA743B20F6CD9E00E53051 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CBAA743C20F6CDA300E53051 /* UIAlertController+Extensions */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		CBAA743C20F6CDA300E53051 /* UIAlertController+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CBAA743D20F6CDC700E53051 /* UIAlertController+Extensions.h */,
+				CBAA743E20F6CDC700E53051 /* UIAlertController+Extensions.m */,
+			);
+			path = "UIAlertController+Extensions";
+			sourceTree = "<group>";
+		};
+		F953D5518BB2335801FD3979 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54D90D6E53C006060F146F1E /* Pods-VKClient.debug.xcconfig */,
+				3A5ADE6A28CAA0DC54B85358 /* Pods-VKClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBAA740D20F6A9FD00E53051 /* VKClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBAA742420F6AA0000E53051 /* Build configuration list for PBXNativeTarget "VKClient" */;
+			buildPhases = (
+				D5A1AD2B8DD3870A27F2FF73 /* [CP] Check Pods Manifest.lock */,
+				CBAA740A20F6A9FD00E53051 /* Sources */,
+				CBAA740B20F6A9FD00E53051 /* Frameworks */,
+				CBAA740C20F6A9FD00E53051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKClient;
+			productName = VKClient;
+			productReference = CBAA740E20F6A9FD00E53051 /* VKClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBAA740620F6A9FD00E53051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Тимур Шафигуллин";
+				TargetAttributes = {
+					CBAA740D20F6A9FD00E53051 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CBAA740920F6A9FD00E53051 /* Build configuration list for PBXProject "VKClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBAA740520F6A9FD00E53051;
+			productRefGroup = CBAA740F20F6A9FD00E53051 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBAA740D20F6A9FD00E53051 /* VKClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBAA740C20F6A9FD00E53051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAA741E20F6AA0000E53051 /* LaunchScreen.storyboard in Resources */,
+				CB20932620FA117B00B2ED0C /* CommentTableViewCell.xib in Resources */,
+				CB428C3020F8003700C0F54C /* PhotoCollectionViewCell.xib in Resources */,
+				CBAA741B20F6AA0000E53051 /* Assets.xcassets in Resources */,
+				CB7DDE3B20F7422800BF1B45 /* NewsTableViewCell.xib in Resources */,
+				CBAA741920F6A9FD00E53051 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D5A1AD2B8DD3870A27F2FF73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBAA740A20F6A9FD00E53051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAA743F20F6CDC700E53051 /* UIAlertController+Extensions.m in Sources */,
+				CB7DDE3420F7419800BF1B45 /* NewsfeedViewController.m in Sources */,
+				CBAA742C20F6AA7200E53051 /* LoginViewController.m in Sources */,
+				CB20932520FA117B00B2ED0C /* CommentTableViewCell.m in Sources */,
+				CB20932E20FA2E7600B2ED0C /* CommentParser.m in Sources */,
+				CB20933A20FA5D7A00B2ED0C /* LikeParser.m in Sources */,
+				CB428C3B20F8109B00C0F54C /* VKError.m in Sources */,
+				CB20934320FA6DCF00B2ED0C /* DeleteLikeRequest.m in Sources */,
+				CB428C4D20F81C1300C0F54C /* Source.m in Sources */,
+				CB428C2F20F8003700C0F54C /* PhotoCollectionViewCell.m in Sources */,
+				CBAA742120F6AA0000E53051 /* main.m in Sources */,
+				CB20933220FA2FE800B2ED0C /* SourceParser.m in Sources */,
+				CB428C4420F8152800C0F54C /* NewsfeedsService.m in Sources */,
+				CBAA743920F6C8E400E53051 /* UserDefaultsManager.m in Sources */,
+				CBAA741320F6A9FD00E53051 /* AppDelegate.m in Sources */,
+				CB428C3420F80BE500C0F54C /* FetchNewsfeedRequest.m in Sources */,
+				CB3C046A20FB4426003E0511 /* ActivityIndicator.m in Sources */,
+				CB428C2720F7F99A00C0F54C /* Helpers.m in Sources */,
+				CB20933E20FA5F0600B2ED0C /* LikeService.m in Sources */,
+				CB428C4820F8179800C0F54C /* NewsParser.m in Sources */,
+				CB74439D20F9317800848182 /* AlertsFactory.m in Sources */,
+				CB20932A20FA199A00B2ED0C /* FetchCommentsRequest.m in Sources */,
+				CB20933620FA46D400B2ED0C /* AddLikeRequest.m in Sources */,
+				CB428C3720F80F5F00C0F54C /* ApiProvider.m in Sources */,
+				CB428C2320F7F4E100C0F54C /* News.m in Sources */,
+				CB20931C20F9F28400B2ED0C /* NewsDetailsViewController.m in Sources */,
+				CB7DDE3A20F7422800BF1B45 /* NewsTableViewCell.m in Sources */,
+				CB20932020FA0F7500B2ED0C /* Comment.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBAA741720F6A9FD00E53051 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBAA741820F6A9FD00E53051 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBAA741C20F6AA0000E53051 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBAA741D20F6AA0000E53051 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBAA742220F6AA0000E53051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBAA742320F6AA0000E53051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBAA742520F6AA0000E53051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D90D6E53C006060F146F1E /* Pods-VKClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8423GK8E47;
+				INFOPLIST_FILE = "$(SRCROOT)/VKClient/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "rubingooddz-gmail.com";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CBAA742620F6AA0000E53051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5ADE6A28CAA0DC54B85358 /* Pods-VKClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8423GK8E47;
+				INFOPLIST_FILE = "$(SRCROOT)/VKClient/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "rubingooddz-gmail.com";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBAA740920F6A9FD00E53051 /* Build configuration list for PBXProject "VKClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAA742220F6AA0000E53051 /* Debug */,
+				CBAA742320F6AA0000E53051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBAA742420F6AA0000E53051 /* Build configuration list for PBXNativeTarget "VKClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBAA742520F6AA0000E53051 /* Debug */,
+				CBAA742620F6AA0000E53051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBAA740620F6A9FD00E53051 /* Project object */;
+}
